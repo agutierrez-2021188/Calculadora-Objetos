@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#handleButtonAction" prefHeight="470.0" prefWidth="244.0" stylesheets="@Calculadora.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.alessandrogutierrez.system.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="485.0" fitWidth="751.0" layoutX="-38.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Fondo%20Calculadora_Carnet%202021188.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnMasMenos" layoutX="14.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="+/-">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUno" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="1">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDos" layoutX="70.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="2">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCuatro" layoutX="14.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="4">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCinco" layoutX="70.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="5">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSeis" layoutX="129.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="6">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMenos" layoutX="185.0" layoutY="293.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="-">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSiete" layoutX="14.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="7">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOcho" layoutX="70.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="8">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnNueve" layoutX="129.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="9">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMulti" layoutX="185.0" layoutY="235.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="*">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUnoX" layoutX="14.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="1/x">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAlCuadrado" layoutX="70.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="x²">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRaiz" layoutX="129.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="√">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDivi" layoutX="185.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="÷">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnC" layoutX="129.0" layoutY="124.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="C">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCero" layoutX="70.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="0">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPunto" layoutX="129.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text=".">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIgual" layoutX="185.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="=">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnTres" layoutX="129.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="3">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMas" layoutX="185.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="+">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPorcentaje" layoutX="14.0" layoutY="124.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="\%">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCE" layoutX="70.0" layoutY="124.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="50.0" styleClass="button1" stylesheets="@Calculadora.css" text="CE">
+         <font>
+            <Font name="MV Boli" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtPantalla" alignment="BASELINE_RIGHT" layoutX="14.0" layoutY="57.0" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="218.0" promptText="0.">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </TextField>
+      <MenuBar layoutX="-14.0" layoutY="-8.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
